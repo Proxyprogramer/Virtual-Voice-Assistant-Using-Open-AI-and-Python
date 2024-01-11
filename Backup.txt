@@ -1,0 +1,10 @@
+Selenium Backup 
+
+---
+chrome_options = Options()
+chrome_options.add_argument('--log-level=3')
+chrome_options.headless = False
+Path = (ChromeDriverManager().install())
+driver = webdriver.Chrome(Path, options=chrome_options)
+driver.maximize_window()
+---
